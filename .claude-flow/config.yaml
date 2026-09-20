@@ -1,0 +1,15 @@
+version: "3.0.0"
+daemon:
+  autostart: false
+daemon.autoStart: false
+daemon.aiWorkers.enabled: false
+memory:
+  backend: hybrid
+  enableHNSW: true
+  persistPath: .claude-flow/data
+  cacheSize: 100
+hooks:
+  enabled: false
+  autoExecute: false
+mcp:
+  autoStart: false

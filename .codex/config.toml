@@ -1,0 +1,6 @@
+[shell_environment_policy]
+inherit = "core"
+
+[shell_environment_policy.set]
+RUFLO_DAEMON_AUTOSTART = "0"
+RUFLO_DAEMON_AI_WORKERS = "0"

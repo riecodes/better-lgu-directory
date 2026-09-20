@@ -1,0 +1,10 @@
+{
+  "statusLine": {
+    "type": "command",
+    "command": "node -e \"const fs=require('fs'),p=require('path');const d=process.env.CLAUDE_PROJECT_DIR||'.';const f=p.join(d,'.claude/helpers/statusline.cjs');const h=p.join(process.env.USERPROFILE||process.env.HOME||'.', '.claude/helpers/statusline.cjs');require(fs.existsSync(f)?f:h);\""
+  },
+  "env": {
+    "RUFLO_DAEMON_AUTOSTART": "0",
+    "RUFLO_DAEMON_AI_WORKERS": "0"
+  }
+}

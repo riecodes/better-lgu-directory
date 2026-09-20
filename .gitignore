@@ -24,3 +24,16 @@ Desktop.ini
 # Emacs
 *#
 .#*
+# ruflo / claude-flow — generated state, memory store, daemon state.
+# config.yaml is the deliberate quota-safe profile, so it stays tracked.
+.claude-flow/*
+!.claude-flow/config.yaml
+.swarm/
+ruvector.db
+
+# ruflo writes these into the tracked .claude/ dir on its first CLI call
+.claude/proven-config.json
+.claude/.proven-config-version
+
+# Claude Code — personal overrides (settings.json itself is shared, keep it tracked)
+.claude/settings.local.json
